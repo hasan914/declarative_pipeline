@@ -29,13 +29,5 @@ pipeline {
                 }
             }
         }
-
-        stage('Cleanup') {
-            steps {
-                script {
-                    sh 'docker-compose down'
-                }
-            }
-        }
     }
 }
