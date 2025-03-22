@@ -3,8 +3,9 @@ services:
   node_app:
     image: node:14.1
     container_name: node_container
-    command: node -v
+    command: tail -f /dev/null  # Keeps container running
+
   maven_app:
     image: maven:3.8.1-openjdk-11
     container_name: maven_container
-    command: mvn -version
+    command: tail -f /dev/null  # Keeps container running
